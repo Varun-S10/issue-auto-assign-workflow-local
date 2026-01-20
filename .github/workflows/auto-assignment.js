@@ -3,10 +3,10 @@ module.exports = async ({github, context}) => {
   let assigneesList;
 
   if (context.payload.issue) {
-    assigneesList = ['Varun-S10', 'Varun-S10'];  // for issues
+    assigneesList = ['Varun-S10'];  // for issues
     issueNumber = context.payload.issue.number;
   } else if (context.payload.pull_request) {
-    assigneesList = ['Varun-S10', 'Varun-S10'];  // for PRs
+    assigneesList = ['Varun-S10'];  // for PRs
     issueNumber = context.payload.pull_request.number;
   } else {
     console.log('Not an issue or PR');
