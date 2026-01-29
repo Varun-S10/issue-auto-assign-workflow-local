@@ -1,7 +1,9 @@
 import {FunctionTool, LlmAgent} from '@google/adk';
 import {z} from 'zod';
 
-/* Mock tool implementation */
+/* 
+Mock tool implementation 
+*/
 const getCurrentTime = new FunctionTool({
   name: 'get_current_time',
   description: 'Returns the current time in a specified city.',
