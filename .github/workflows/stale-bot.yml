@@ -39,7 +39,7 @@ jobs:
 
       - name: Run Auditor Agent Script
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CONCURRENCY_LIMIT: ${{ secrets.CONCURRENCY_LIMIT }}
           LLM_MODEL_NAME: ${{ secrets.LLM_MODEL_NAME }}
