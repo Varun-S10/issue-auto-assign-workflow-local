@@ -42,7 +42,7 @@ jobs:
           GITHUB_TOKEN: "github-actions"
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           CONCURRENCY_LIMIT: ${{ secrets.CONCURRENCY_LIMIT }}
-          LLM_MODEL_NAME: ${{ secrets.REPO }}
+          LLM_MODEL_NAME: ${{ secrets.LLM_MODEL_NAME }}
           NODE_PATH: contributing/samples
           OWNER: ${{ secrets.OWNER }}
           REPO: ${{ secrets.REPO }}
@@ -56,4 +56,4 @@ jobs:
           SLEEP_BETWEEN_CHUNKS: ${{ secrets.SLEEP_BETWEEN_CHUNKS }}
     
 
-        run: npx ts-node --esm contributing/samples/adk-stale-agent/main.ts
+        run: npx tsx contributing/samples/adk-stale-agent/main.ts
