@@ -11,10 +11,15 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@types/luxon": "^3.7.1",
     "typescript": "^5.9.3"
   },
   "dependencies": {
     "@google/adk": "^0.2.4",
-    "@google/adk-devtools": "^0.2.4"
+    "@google/adk-devtools": "^0.2.4",
+    "axios": "^1.13.5",
+    "axios-retry": "^4.5.0",
+    "date-fns": "^4.1.0",
+    "luxon": "^3.7.2"
   }
 }
