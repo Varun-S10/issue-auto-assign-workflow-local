@@ -5,7 +5,7 @@ on:
 
   schedule:
     # This runs at 6:00 AM UTC (10 PM PST)
-    - cron: '0 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   audit-stale-issues:
