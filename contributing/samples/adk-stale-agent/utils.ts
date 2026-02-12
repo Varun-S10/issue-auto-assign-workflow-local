@@ -174,7 +174,7 @@ export async function getOldOpenIssueNumbers(
         page,
       };
 
-      const data = await getRequest(url, { params });
+      const data = await getRequest(url, params );
       const items = data.items ?? [];
 
       if (items.length === 0) {
