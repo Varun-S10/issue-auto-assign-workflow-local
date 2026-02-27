@@ -31,7 +31,7 @@ module.exports = async ({github, context}) => {
   const assigneeToAssign = activeAssigneesList[selection];
 
   console.log(`Assigning #${issueNumber} to: ${assigneeToAssign}`);
-
+ 
   return github.rest.issues.addAssignees({
     issue_number: issueNumber,
     owner: context.repo.owner,
