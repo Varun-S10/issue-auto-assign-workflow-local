@@ -62,8 +62,7 @@ name: ADK Stale Issue Auditor (JS)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/5 * * * *'
+ 
 
 jobs:
   audit-stale-issues:
